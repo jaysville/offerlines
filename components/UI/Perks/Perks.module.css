@@ -1,0 +1,22 @@
+.perks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 50px;
+  gap: 0;
+  color: rgb(184, 111, 16);
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.perks li {
+  margin-bottom: 50px;
+}
+@media (max-width: 766px) {
+  .perks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 766px) {
+  .perks {
+    place-items: center;
+  }
+}

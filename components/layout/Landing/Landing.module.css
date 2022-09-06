@@ -1,0 +1,34 @@
+.landing {
+  background-color: #33899e;
+  overflow: hidden;
+  color: yellow;
+}
+
+@media (max-width: 766px) {
+  .shop {
+    height: 47vh;
+    text-align: center;
+  }
+}
+.button {
+  background-color: black;
+  color: aliceblue;
+  width: 150px;
+  height: 60px;
+  border: none;
+  transition: all 200ms ease-in-out;
+}
+
+.button:hover {
+  border: none;
+
+  background-color: rgb(43, 42, 42);
+}
+.offerlines {
+  color: orange;
+}
+
+.offerlines::after {
+  color: orange;
+  content: "!";
+}

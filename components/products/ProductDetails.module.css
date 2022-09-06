@@ -1,0 +1,75 @@
+.container {
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+
+.container h3 {
+  color: rgb(184, 111, 16);
+}
+
+.modal-content {
+  position: relative;
+}
+.modal-content svg {
+  font-size: 50px;
+}
+.closeBtn {
+  position: absolute;
+  top: -30%;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+}
+.closeBtn svg {
+  font-size: 30px;
+}
+.shopBtn {
+  position: absolute;
+  top: -30%;
+  left: -1%;
+  cursor: pointer;
+  color: goldenrod;
+  transition: all 200ms ease-in-out;
+}
+.shopBtn:hover {
+  color: #063f54f9;
+}
+.shopBtn svg {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.check {
+  color: goldenrod;
+}
+.cart-link {
+  margin: 20px 0;
+  background: black;
+  color: white;
+  width: 100%;
+}
+.image-container {
+  border-right: 1px solid #46444411;
+}
+
+@media (max-width: 767px) {
+  .image-container {
+    border: none;
+    padding-bottom: 30px;
+    border-bottom: 0.5px solid #4c4c4c0c;
+  }
+}
+
+.actions {
+  width: 150px;
+  height: 70px;
+  background-color: black;
+  color: aliceblue;
+}
+
+@media (max-width: 450px) {
+  .actions {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+  }
+}

@@ -1,6 +1,12 @@
-.thumbnail {
+.img-container img {
   width: 50%;
   height: 50%;
-  min-height: 250px;
+  min-height: 200px;
   max-height: 270px;
+}
+
+@media (max-width: 500px) {
+  .img-container img {
+    transform: scale(0.9);
+  }
 }

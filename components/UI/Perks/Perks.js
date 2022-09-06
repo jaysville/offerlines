@@ -38,7 +38,7 @@ const Perks = () => {
           <li key={i}>
             <div className="d-flex">
               <div>{icon}</div>
-              <div className="d-flex flex-column ">
+              <div className="d-flex flex-column ms-3">
                 <strong>{perk}</strong>
                 <small>{text}</small>
               </div>

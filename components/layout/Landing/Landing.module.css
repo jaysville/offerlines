@@ -17,6 +17,7 @@
   height: 60px;
   border: none;
   transition: all 200ms ease-in-out;
+  white-space: nowrap;
 }
 
 .button:hover {

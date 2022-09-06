@@ -42,7 +42,7 @@ const CartItem = ({ id, price, title, desc, image, quantity }) => {
           </div>
         </div>
         <div
-          className={`col-md-6 d-flex flex-column justify-content-center ${classes.details}`}
+          className={`col-md-6 d-flex flex-column justify-content-center pt-4 ${classes.details}`}
         >
           <h3>{title}</h3>
           <p>${price}</p>

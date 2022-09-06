@@ -50,6 +50,23 @@
   cursor: pointer;
   font-weight: lighter;
   color: rgb(93, 89, 89);
+  margin: auto 10px;
+}
+
+@media (max-width: 500px) {
+  .links svg {
+    font-size: 20px;
+    margin: auto 5px;
+  }
+  .badge {
+    width: 19px;
+    height: 19px;
+    top: -20%;
+    right: -20%;
+  }
+  .badge span {
+    font-size: 13px;
+  }
 }
 
 .links svg:hover,

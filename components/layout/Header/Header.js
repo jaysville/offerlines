@@ -29,7 +29,12 @@ const Header = (props) => {
             </span>
           </li>
           <li>
-            <span className={classes.links}>
+            <span
+              className={classes.links}
+              onClick={() => {
+                router.push("https://github.com/jaysville/offerlines");
+              }}
+            >
               <GitHubIcon className="mb-1" />
             </span>
             <span className={classes.links}>

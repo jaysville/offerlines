@@ -1,10 +1,11 @@
 import CartItem from "./CartItem";
+import styled from "styled-components";
 
 const ItemList = (props) => {
   const cartItems = props.cartItems;
 
   return (
-    <ul>
+    <ListContainer>
       {cartItems.map(({ id, title, description, image, price, quantity }) => {
         return (
           <CartItem
@@ -18,8 +19,11 @@ const ItemList = (props) => {
           />
         );
       })}
-    </ul>
+    </ListContainer>
   );
 };
 
+const ListContainer = styled.ul`
+  padding-inline-start: 0;
+`;
 export default ItemList;

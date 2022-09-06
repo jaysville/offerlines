@@ -15,8 +15,6 @@ module.exports.categoryData = [
   "womens-watches",
   "womens-bags",
   "womens-jewellery",
-  "sunglasses",
   "automotive",
-  "motorcycle",
   "lighting",
 ];

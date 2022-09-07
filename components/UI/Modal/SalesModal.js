@@ -5,7 +5,7 @@ const SalesModal = (props) => {
   return (
     <Modal>
       <h3>Sales coming soon</h3>
-      <Button onClick={props.onShowModal}>Close</Button>
+      <Button onClick={props.onToggleSalesModal}>Close</Button>
     </Modal>
   );
 };

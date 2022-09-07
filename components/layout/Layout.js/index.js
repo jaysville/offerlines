@@ -20,7 +20,7 @@ const Layout = (props) => {
         />
         <title>OfferLines</title>
       </Head>
-      <Header onShowCart={toggleModal} />
+      <Header onToggleSalesModal={toggleModal} />
       {showSalesModal && <SalesModal onShowModal={toggleModal} />}
       <main>{props.children}</main>
     </>

@@ -38,7 +38,7 @@ const Header = (props) => {
               <GitHubIcon className="mb-1" />
             </span>
             <span className={classes.links}>
-              <CardGiftcardOutlinedIcon onClick={props.onShowCart} />
+              <CardGiftcardOutlinedIcon onClick={props.onToggleSalesModal} />
             </span>
             <span
               onClick={() => {

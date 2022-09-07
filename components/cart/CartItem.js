@@ -28,7 +28,7 @@ const CartItem = ({ id, price, title, desc, image, quantity }) => {
     <List>
       <hr />
       <div className="row mb-3 p-3">
-        <div className={`col-md-6 d-flex ${classes["image-container"]}`}>
+        <div className={`col-md-6 py-4 d-flex ${classes["image-container"]}`}>
           <picture>
             <img src={image} alt="cart-item" className="Image-fluid" />
           </picture>
@@ -42,12 +42,15 @@ const CartItem = ({ id, price, title, desc, image, quantity }) => {
           </div>
         </div>
         <div
-          className={`col-md-6 d-flex flex-column justify-content-center pt-4 ${classes.details}`}
+          className={`col-md-6 d-flex flex-column justify-content-center py-4 ${classes.details}`}
         >
           <h3>{title}</h3>
           <p>${price}</p>
           <em>{desc}</em>
-          <p className={`text-danger ${classes.action}`} onClick={removeItem}>
+          <p
+            className={`text-danger mt-3 ${classes.action}`}
+            onClick={removeItem}
+          >
             Remove
           </p>
         </div>

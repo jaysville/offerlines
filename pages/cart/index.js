@@ -95,9 +95,6 @@ const EmptyCartContainer = styled.div`
   }
   p {
     cursor: pointer;
-    color: #adcfea;
-    &:hover {
-      color: goldenrod;
-    }
+    color: goldenrod;
   }
 `;

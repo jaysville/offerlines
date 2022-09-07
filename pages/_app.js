@@ -3,7 +3,8 @@ import "../styles/globals.css";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Loader from "../components/UI/Loader/Loader.js";
-import store from "../redux";
+import { store, persistor } from "../redux";
+import { PersistGate } from "redux-persist/integration/react";
 import { Provider } from "react-redux";
 
 function MyApp({ Component, pageProps }) {
@@ -21,7 +22,9 @@ function MyApp({ Component, pageProps }) {
   }, [router]);
   return (
     <Provider store={store}>
-      <Layout>{isLoading ? <Loader /> : <Component {...pageProps} />}</Layout>
+      <PersistGate loading={<Loader />} persistor={persistor}>
+        <Layout>{isLoading ? <Loader /> : <Component {...pageProps} />}</Layout>
+      </PersistGate>
     </Provider>
   );
 }

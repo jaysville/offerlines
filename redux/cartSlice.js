@@ -31,11 +31,11 @@ const cartSlice = createSlice({
     },
     removeFromCart(state, action) {
       const id = action.payload;
-      const { removeAll } = action.payload;
+
       const existingCartItem = state.items.find((item) => item.id === id);
       state.totalQuantity--;
 
-      if (existingCartItem.quantity === 1 || removeAll === true) {
+      if (existingCartItem.quantity === 1) {
         state.items = state.items.filter((item) => item.id !== id);
       } else {
         existingCartItem.quantity--;

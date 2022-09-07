@@ -27,7 +27,7 @@ const CartItem = ({ id, price, title, desc, image, quantity }) => {
   return (
     <List>
       <hr />
-      <div className="row mb-3 p-3">
+      <div className="row p-3">
         <div className={`col-md-6 py-4 d-flex ${classes["image-container"]}`}>
           <picture>
             <img src={image} alt="cart-item" className="Image-fluid" />

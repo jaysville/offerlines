@@ -12,13 +12,8 @@
   margin: auto 20px;
   border-radius: 10px;
   padding: 10px;
-  background-color: #33899e;
+  background-color: #021d24;
   color: rgb(238, 238, 226);
   cursor: pointer;
-  transition: all 300ms ease-in-out;
-}
-
-.list li:hover {
-  background-color: rgb(156, 192, 224);
-  color: rgb(17, 88, 112);
+  transform: scale(0.87);
 }
